@@ -1,2 +1,2 @@
 # Interpreter
-Interpreter for a minimal form of the Julia programming language
+Interpreter for a minimal form of the Julia programming language.
