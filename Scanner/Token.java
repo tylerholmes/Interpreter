@@ -1,11 +1,3 @@
-/*
- * Class:       CS 4308 Section 03
- * Term:        Spring 2022
- * Name:        Tyler Holmes
- * Instructor:  Sharon Perry
- * Project:     Deliverable P1 Scanner  
- */
-
 // Token class for storing each object's token and lexeme
 class Token {
 

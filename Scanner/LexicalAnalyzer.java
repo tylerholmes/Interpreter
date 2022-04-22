@@ -1,11 +1,3 @@
-/*
- * Class:       CS 4308 Section 03
- * Term:        Spring 2022
- * Name:        Tyler Holmes
- * Instructor:  Sharon Perry
- * Project:     Deliverable P1 Scanner  
- */
-
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -80,23 +72,23 @@ public class LexicalAnalyzer {
     private static ArrayList<Token> makeSymbolTable(ArrayList<Token> symbolTable, String[] str) {
         for(int i=0; i<str.length; i++) {
             if(str[i].equals("="))  { symbolTable.add(new Token("=","assignment_operator")); }
-            if(str[i].equals("<=")) { symbolTable.add(new Token("<=","le_operator")); }
-            if(str[i].equals("<"))  { symbolTable.add(new Token("<","lt_operator")); }
-            if(str[i].equals(">=")) { symbolTable.add(new Token(">=","ge_operator")); }
-            if(str[i].equals(">"))  { symbolTable.add(new Token(">","gt_operator")); }
-            if(str[i].equals("==")) { symbolTable.add(new Token("==","eq_operator")); }
-            if(str[i].equals("~=")) { symbolTable.add(new Token("~=","ne_operator")); }
-            if(str[i].equals("+"))  { symbolTable.add(new Token("+","add_operator")); }
-            if(str[i].equals("-"))  { symbolTable.add(new Token("-","sub_operator")); }
-            if(str[i].equals("*"))  { symbolTable.add(new Token("*","mul_operatorl")); }
-            if(str[i].equals("/"))  { symbolTable.add(new Token("/","div_operator")); }
-            if(str[i].equals("("))  { symbolTable.add(new Token("(","left_parentheses")); }
-            if(str[i].equals(")"))  { symbolTable.add(new Token(")","right_parentheses")); }
+            else if(str[i].equals("<=")) { symbolTable.add(new Token("<=","le_operator")); }
+            else if(str[i].equals("<"))  { symbolTable.add(new Token("<","lt_operator")); }
+            else if(str[i].equals(">=")) { symbolTable.add(new Token(">=","ge_operator")); }
+            else if(str[i].equals(">"))  { symbolTable.add(new Token(">","gt_operator")); }
+            else if(str[i].equals("==")) { symbolTable.add(new Token("==","eq_operator")); }
+            else if(str[i].equals("~=")) { symbolTable.add(new Token("~=","ne_operator")); }
+            else if(str[i].equals("+"))  { symbolTable.add(new Token("+","add_operator")); }
+            else if(str[i].equals("-"))  { symbolTable.add(new Token("-","sub_operator")); }
+            else if(str[i].equals("*"))  { symbolTable.add(new Token("*","mul_operatorl")); }
+            else if(str[i].equals("/"))  { symbolTable.add(new Token("/","div_operator")); }
+            else if(str[i].equals("("))  { symbolTable.add(new Token("(","left_parentheses")); }
+            else if(str[i].equals(")"))  { symbolTable.add(new Token(")","right_parentheses")); }
             // Regex to see if str[i] is a number 
             // Source: https://stackoverflow.com/questions/5439529/determine-if-a-string-is-an-integer-in-java User: shuangwhywhy
-            if(str[i].matches("-?(0|[1-9]\\d*)") == true) { symbolTable.add(new Token(str[i],"literal_integer")); }
-            if(isIdentifier(str[i]) == true) {symbolTable.add(new Token(str[i],"identifier")); }
-            if((isKeyword(str[i])) == true) { symbolTable.add(new Token(str[i],"keyword")); }
+            else if(str[i].matches("-?(0|[1-9]\\d*)") == true) { symbolTable.add(new Token(str[i],"literal_integer")); }
+            else if(isIdentifier(str[i]) == true) {symbolTable.add(new Token(str[i],"identifier")); }
+            else if((isKeyword(str[i])) == true) { symbolTable.add(new Token(str[i],"keyword")); }
         }
         return symbolTable;
     }

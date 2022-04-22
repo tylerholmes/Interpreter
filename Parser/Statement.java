@@ -1,11 +1,3 @@
-/*
- * Class:       CS 4308 Section 03
- * Term:        Spring 2022
- * Name:        Tyler Holmes
- * Instructor:  Sharon Perry
- * Project:     Deliverable P2 Parser
- */
-
 import java.util.ArrayList;
 
 class Statement {
