@@ -17,4 +17,5 @@ function a()
 end
 ```
 
+Output
 ![alt text](https://github.com/tylerholmes/Interpreter/blob/main/SampleOutput-Test1.jpg)
