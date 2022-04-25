@@ -25,8 +25,6 @@ public class LexicalAnalyzer {
 
         symbolTable = makeSymbolTable(symbolTable, separatedString);
 
-        printSymbolTable(symbolTable);
-
         return symbolTable;
     }
 
@@ -97,7 +95,7 @@ public class LexicalAnalyzer {
     // Can't use the toString method from Token.java because
     // I had to remove the "this.lexeme" from the toString method
     // for the parser printing to work properly
-    private static void printSymbolTable(ArrayList<Token> table) throws IOException {
+    public static void printSymbolTable(ArrayList<Token> table) throws IOException {
         System.out.println("\n======Scanner Output======\n");
         for(int i=0; i<table.size(); i++) {
             System.out.println(table.get(i).getToken() + " is " + table.get(i).getLexeme());

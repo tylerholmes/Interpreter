@@ -1,10 +1,3 @@
-/*
- * Class:       CS 4308 Section 03
- * Term:        Spring 2022
- * Name:        Tyler Holmes
- * Instructor:  Sharon Perry
- * Project:     Deliverable P2 Parser
- */
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -20,6 +13,7 @@ class SyntaxAnalyzer {
     public static ArrayList<Statement> parser(String fileName) throws Exception {
         // Get symbol table produced by lexical analyzer
         st = LexicalAnalyzer.getSymbolTable(fileName);
+        LexicalAnalyzer.printParseTree(st);
         program();
         printParseTree();
 
