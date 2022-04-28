@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "Main",
+        "Executor",
+        "Parser",
+        "Scanner",
+        "Test-Files"
+    ]
+}

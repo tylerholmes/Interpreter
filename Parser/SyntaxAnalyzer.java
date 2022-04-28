@@ -13,7 +13,7 @@ class SyntaxAnalyzer {
     public static ArrayList<Statement> parser(String fileName) throws Exception {
         // Get symbol table produced by lexical analyzer
         st = LexicalAnalyzer.getSymbolTable(fileName);
-        LexicalAnalyzer.printParseTree(st);
+        LexicalAnalyzer.printSymbolTable(st);
         program();
         printParseTree();
 
